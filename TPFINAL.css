@@ -1,0 +1,211 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+overflow-y: hidden;
+}
+@media(min-width: 1199.98px){
+    body{
+        background: white;
+    }
+}
+@media (max-width: 575.98px) and (orentation: portrait){
+    body{
+        background: black;
+    }
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+}
+header{
+    height: 12vh;
+    background-image:url(https://i.pinimg.com/736x/82/f2/1d/82f21d4fab0141ec3bd035e01e39cb3b.jpg);
+    background-size: cover;
+}
+header img{
+    height: 50px;
+    margin-right: 10px;
+}
+.container ul li{ 
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: "fuente";
+    letter-spacing: 3px;
+}
+.container ul1 li{ 
+    display: inline-block;
+    font-family: "fuente";
+    letter-spacing: 3px;
+    margin-left: 600px;
+    background-color: #b48fee;
+    border-radius: 25px;
+    padding: 5px 10px;
+}
+.container a{
+    color: rgb(66, 0, 128);
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+.container a:hover{
+    background-color: #b48fee;
+    color: rgb(0, 0, 0); 
+    padding: 5px;
+    border-radius: 25px;
+}
+.texto p{
+    margin-top: 10px;
+}
+@font-face{
+    font-family: fuente;
+    src:url(Fluence_DEMO[1].ttf);
+}
+.containercarrusel{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.carrusel input{
+    visibility: hidden;
+    display: none;
+}
+.buttons{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom:110px;
+    gap: 10px;
+}
+.buttons label{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(167, 136, 238);
+    border-radius: 50%;
+    opacity: 0.5;
+    cursor: pointer;
+    z-index: 1;
+    transition: 0.9s;
+}
+.buttons label:hover{
+    scale: 1.2;
+    opacity: 1;
+}
+.carrusel input:nth-child(1):checked ~ .buttons label:nth-child(1),
+.carrusel input:nth-child(2):checked ~ .buttons label:nth-child(2),
+.carrusel input:nth-child(3):checked ~ .buttons label:nth-child(3),
+.carrusel input:nth-child(4):checked ~ .buttons label:nth-child(4)
+{
+   opacity: 1;
+   scroll-margin: 1.2;
+   width: 40px; 
+}
+.content{
+    position: relative;
+    width: 1000vw;
+    display: flex;
+    transition: 400ms ease-in-out; 
+    font-family: "fuente2";
+}
+@font-face{
+    font-family: fuente2;
+    src:url(Funkorama.ttf);
+}
+.primercarrusel,.segundocarrusel,.tercercarrusel,.cuartocarrusel{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -10px;
+    
+}
+.primercarrusel{
+    background-color: white;
+}
+.segundocarrusel{
+    background-color: white;
+}
+.tercercarrusel{
+    background-color: white;
+}
+.cuartocarrusel{
+    background-color: white;
+}
+.carrusel input:nth-child(1):checked ~ .content{
+    left: 0;
+}
+.carrusel input:nth-child(2):checked ~ .content{
+    left: -101vw;
+}
+.carrusel input:nth-child(3):checked ~ .content{
+    left: -201vw;
+}
+.carrusel input:nth-child(4):checked ~ .content{
+    left: -301vw;
+}
+.content img{
+    margin-top: -7%;
+    height: 90%;
+    width: 35%;
+    margin-right: -35%;
+}
+h1{
+    margin-left: -50%;
+    margin-right: -10%;
+    margin-top: -5%;
+    font-size: 350%;
+}
+.content a{
+    text-decoration: none;
+    transition: 0.5s;
+    color: #b48fee;
+}
+.content a:hover{
+    color: rgb(0, 0, 0); 
+    padding: 5px 10px;
+    border-radius: 30px;
+}
+body{
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    margin-top: 0%;
+}
+.btn-wsp{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    left: 30px;
+    background: rgb(167, 136, 238);
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba (0, 0, 0, 0.3);
+}
+.btn-wsp:hover{
+    text-decoration: none;
+    color: #fcfffd;
+    background: #ffffff;
+}
+body a img{
+    width: 30px;
+    height: 30px;
+    margin-top: 13px;
+}
+.contador {
+    margin-top: -50px;
+    margin-left: 600px;
+}
+.contador img{
+    width: 100px;
+    height: 30px;
+}

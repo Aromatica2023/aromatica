@@ -1,0 +1,126 @@
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+}
+header{
+    height: 12vh;
+    background-image:url(https://i.pinimg.com/736x/82/f2/1d/82f21d4fab0141ec3bd035e01e39cb3b.jpg);
+    background-size: cover;
+}
+header img{
+    height: 50px;
+    margin-right: 10px;
+}
+.container ul li{ 
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: "fuente";
+    letter-spacing: 3px;
+}
+.container ul1 li{ 
+    display: inline-block;
+    font-family: "fuente";
+    letter-spacing: 3px;
+    margin-left: 600px;
+    background-color: #b48fee;
+    border-radius: 25px;
+    padding: 5px 10px;
+}
+.container a{
+    color: rgb(66, 0, 128);
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+.container a:hover{
+    background-color: #b48fee;
+    color: rgb(0, 0, 0); 
+    padding: 5px;
+    border-radius: 25px;
+}
+.texto p{
+    margin-top: 10px;
+}
+@font-face{
+    font-family: fuente;
+    src:url(Fluence_DEMO[1].ttf);
+}
+footer{
+    background-image:url(https://i.pinimg.com/736x/82/f2/1d/82f21d4fab0141ec3bd035e01e39cb3b.jpg);
+    margin-top: 70px;
+    background-size: cover;
+    padding: 50px 20px;
+}
+.footer-col .social-links{
+    margin-left: 1150px;
+    margin-top: -20px;
+    padding-top: 50px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 55px;
+	width: 55px;
+	background-color: #b48fee;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+    margin:0 10px 10px 0;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+.footer-col h4{
+    margin-left: 1150px;
+	font-size: 20px;
+	color: #000000;
+
+	font-weight: 500;
+}
+.map .mapa iframe{
+    display: inline-block;
+	height: 180px;
+	width: 180px;
+	background-color: #b48fee;
+	text-align: center;
+	line-height: 20px;
+    margin-left: 100px;
+    margin-top: -18px;
+}
+.map{
+    margin-top: -140px;
+}
+.clima{
+    margin-top: -150px;
+}
+a{ 
+    text-decoration: none;
+    color: #000000;
+}
+footer img{
+    width: 35px;
+    height: 35px;
+    margin-top: 9px;
+}
+body{
+    font-family: 'lato';
+    color: #333;
+}
+img{
+    max-width: 100%;
+}
+.container-items{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
